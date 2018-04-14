@@ -11,6 +11,13 @@
      "xxx": "xxx --mode development/production/none"
    },
 ```
+当启动webpack-dev-server出现404情况的时候，可以尝试修改一下端口号试试
+```javascript
+	devServer: {
+		contentBase: './dist',
+		port: '8080' 
+	},
+```
 关于配置babel 按着官方文档做法会报出文件中不存在的错误 查了一下babel的说明 正确写法应该这么来
 ```javascript
 rules: [
