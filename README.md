@@ -21,7 +21,7 @@ rules: [
 	 	use: {
 	  	loader: 'babel-loader',
 	 	 	options: {
-				presets: ['env']，
+				presets: ['env']，   // 如果你使用的react使用了babel 一定要在额外加一个'react'的值   
 	     	plugins: ['transform-runtime']
 	  	} 
   	}
